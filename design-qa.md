@@ -76,3 +76,76 @@
 - Operating system is now the lower 25% panel inside the same full-screen section.
 
 final result: passed
+
+**Spacing, Operating Timeline, and Dashboard Graph QA**
+- Desktop ecosystem/operating screenshot: `C:\Users\Chester\Documents\Parea Renovation 1.0\qa-spacing-arrows-ecosystem-desktop.png`
+- Tablet ecosystem/operating screenshot: `C:\Users\Chester\Documents\Parea Renovation 1.0\qa-spacing-arrows-ecosystem-tablet.png`
+- Mobile operating screenshot: `C:\Users\Chester\Documents\Parea Renovation 1.0\qa-spacing-arrows-operating-mobile.png`
+- Dashboard graph screenshot: `C:\Users\Chester\Documents\Parea Renovation 1.0\qa-dashboard-graph-desktop.png`
+- 1440 x 900: visual gap between Ecosystem and Operating panels is 27px.
+- 900 x 800: visual gap between Ecosystem and Operating panels is 24px.
+- 390 x 844: visual gap between Ecosystem and Operating panels is 25px.
+- Operating System process arrows are hidden across desktop, tablet, and mobile; numbered circles remain centered over their columns.
+- Operating Dashboard line chart was replaced with a clean SVG graph using grid lines, primary trend, secondary comparison line, and one highlighted endpoint.
+- No horizontal overflow was detected in the checked desktop, tablet, or mobile viewports.
+
+final result: passed
+
+**Operating Framework Reference Match QA**
+- Source current issue screenshot: `C:\Users\Chester\Downloads\c6643e33-4a9d-4919-893d-edb6c9d573ce.png`
+- Source target screenshot: `C:\Users\Chester\Downloads\7361a0db-bbff-4dab-996a-de41a3747e64.png`
+- Desktop implementation screenshot: `C:\Users\Chester\Documents\Parea Renovation 1.0\qa-operating-framework-desktop-final.png`
+- Desktop operating element screenshot: `C:\Users\Chester\Documents\Parea Renovation 1.0\qa-operating-framework-element-desktop-v3.png`
+- Mobile operating screenshot: `C:\Users\Chester\Documents\Parea Renovation 1.0\qa-operating-framework-mobile-final.png`
+- Mobile ecosystem 2-row screenshot: `C:\Users\Chester\Documents\Parea Renovation 1.0\qa-ecosystem-mobile-2rows-final.png`
+- Side-by-side comparison evidence: `C:\Users\Chester\Documents\Parea Renovation 1.0\qa-operating-framework-comparison.png`
+- 1440 x 900: left operating copy column is 340px, 25.7% of the operating layout; framework is 933px, 70.4% of the operating layout.
+- 1440 x 900: workflow container height is 252px, step columns are equal, numbered circles align to column centers within 0-1px.
+- 1280 x 720: no horizontal overflow; timeline remains a five-step framework.
+- 900 x 800 tablet: no horizontal overflow; the two-column operating layout is preserved and the framework remains a five-step timeline.
+- 390 x 844 mobile: no horizontal overflow; operating content stacks above a two-column workflow with step 05 spanning the full row.
+- 390 x 844 mobile: ecosystem cards render as a two-by-two grid.
+- Copy, colors, serif headline, sans-serif body, thin borders, and warm off-white background were preserved.
+
+final result: passed
+
+**Hero Reference Visual Swap QA**
+- Source image: `C:\Users\Chester\Downloads\a612687a-ed5f-4871-9cf1-c5e108bd6b27.png`
+- Generated transparent hero asset: `C:\Users\Chester\Documents\Parea Renovation 1.0\assets\hero-system-map-cutout.png`
+- Desktop screenshot: `C:\Users\Chester\Documents\Parea Renovation 1.0\qa-hero-reference-swap-desktop-v3.png`
+- Tight desktop screenshot: `C:\Users\Chester\Documents\Parea Renovation 1.0\qa-hero-reference-swap-1280-v3.png`
+- Mobile screenshot: `C:\Users\Chester\Documents\Parea Renovation 1.0\qa-hero-reference-swap-mobile-v2.png`
+- 1440 x 900: hero visual renders at 864px wide from a 1672px asset, scale 0.517, with no horizontal overflow.
+- 1280 x 720: hero visual renders at 768px wide from the same asset, scale 0.459, with no horizontal overflow.
+- 390 x 844: hero visual renders at 374px wide with 8px side padding and no horizontal overflow.
+- The rectangular photo background was removed from the visual asset; CSS opacity is 1 and no drop-shadow fade is applied.
+
+final result: passed
+
+**Ecosystem + Operating Reference Refinement QA**
+- Desktop screenshot: `C:\Users\Chester\Documents\Parea Renovation 1.0\qa-ecosystem-refined-desktop-v2.png`
+- Tight desktop screenshot: `C:\Users\Chester\Documents\Parea Renovation 1.0\qa-ecosystem-refined-1280-v2.png`
+- Mobile section screenshot: `C:\Users\Chester\Documents\Parea Renovation 1.0\qa-ecosystem-refined-mobile-v2.png`
+- Mobile process screenshot: `C:\Users\Chester\Documents\Parea Renovation 1.0\qa-operating-process-mobile-2col.png`
+- 1440 x 900: merged Ecosystem + Operating section remains one full viewport; Operating panel is 230px inside a 781px layout, or 29.4% of the section content.
+- 1280 x 720: Operating panel is 179px inside a 611px layout, or 29.3% of the section content.
+- Ecosystem cards were tightened into shorter rectangular cards and the connector path was rebuilt as a compact centered network with short drops to the card row.
+- Operating process strip was tightened; numbered circles now sit as top markers on the process line with arrows aligned across the strip.
+- Mobile 390 x 844: no horizontal overflow; section headlines align center; Operating process uses a two-column grid with step 05 spanning the full final row.
+
+final result: passed
+
+**Refinement Pass QA**
+- Hero desktop screenshot: `C:\Users\Chester\Documents\Parea Renovation 1.0\qa-refinement-hero-desktop.png`
+- Hero tight desktop screenshot: `C:\Users\Chester\Documents\Parea Renovation 1.0\qa-refinement-hero-1280.png`
+- Hero mobile containment screenshot: `C:\Users\Chester\Documents\Parea Renovation 1.0\qa-refinement-hero-mobile-contained.png`
+- Outcomes + Ideas mobile stacked screenshot: `C:\Users\Chester\Documents\Parea Renovation 1.0\qa-refinement-outcomes-mobile-stacked.png`
+- Desktop 1440 x 900: hero image renders at 800px wide from a 1672px asset, so it is not upscaled; hero height is 900px and the next section starts at 900px.
+- Tight desktop 1280 x 720: hero image renders at 711px wide from the same 1672px asset; no horizontal overflow.
+- Mobile 390 x 844: hero image renders from x=12 to x=378, giving 12px side breathing room; no horizontal overflow.
+- Header nav now uses `Our System`; no visible `Operating House` copy remains.
+- Footer nav heading now uses `Our System`; copyright renders without mojibake.
+- Outcomes metric cards stack to one 350px column on mobile.
+- White card treatments for Ideas Become Systems and Acquisitions Approach remain the same 8px light card direction over the dark background.
+
+final result: passed

@@ -15,7 +15,7 @@
       rel="stylesheet"
     >
     <link rel="preload" href="assets/dark-canopy.png" as="image">
-    <link rel="stylesheet" href="styles.css?v=ecosystem-merge">
+    <link rel="stylesheet" href="styles.css?v=mobile-spacing-hero-border-pass">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
     <script src="script.js?v=hero-photo" defer></script>
   </head>
@@ -27,7 +27,7 @@
         <i data-lucide="menu" aria-hidden="true"></i>
       </button>
       <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-        <a href="#operating-house">Operating House</a>
+        <a href="#operating-house">Our System</a>
         <a href="#ecosystem">Ecosystem</a>
         <a href="#build-method">Build Method</a>
         <a href="#acquisitions">Acquisitions</a>
@@ -56,14 +56,14 @@
             </div>
             <ul class="trust-row" aria-label="Parea operating principles">
               <li><i data-lucide="check-circle-2" aria-hidden="true"></i> Systems First</li>
-              <li><i data-lucide="check-circle-2" aria-hidden="true"></i> Long Term Ownership</li>
+              <li><i data-lucide="check-circle-2" aria-hidden="true"></i> Long-Term Ownership</li>
               <li><i data-lucide="check-circle-2" aria-hidden="true"></i> Owner Aligned</li>
             </ul>
           </div>
 
           <figure class="hero-system-map reveal" aria-label="Parea Collective operating system map">
             <img
-              src="assets/hero-system-map-cutout.png?v=no-bg"
+              src="assets/hero-system-map-cutout.png?v=reference-swap"
               alt="Parea Collective system map connecting market signals, operational friction, data feedback, company units, outputs, and the measure learn improve loop."
             >
           </figure>
@@ -182,7 +182,13 @@
               <p class="metric-label">Revenue Impact</p>
               <strong>$24.8M</strong>
               <small>Up 31% vs prior 30 days</small>
-              <div class="line-chart" aria-hidden="true"></div>
+              <svg class="line-chart" viewBox="0 0 180 82" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+                <path class="chart-grid" d="M0 22H180 M0 44H180 M0 66H180"></path>
+                <path class="chart-area" d="M0 68 C20 58 34 55 52 48 S84 36 104 44 S132 28 160 18 S174 20 180 24 L180 82 L0 82 Z"></path>
+                <path class="chart-line chart-line-primary" d="M0 68 C20 58 34 55 52 48 S84 36 104 44 S132 28 160 18 S174 20 180 24"></path>
+                <path class="chart-line chart-line-secondary" d="M0 72 C28 64 42 62 62 54 S100 48 118 36 S152 30 180 16"></path>
+                <circle class="chart-dot" cx="160" cy="18" r="3"></circle>
+              </svg>
             </article>
             <article class="metric-card reveal">
               <h3>Campaign Performance</h3>
@@ -278,7 +284,7 @@
             </div>
             <div class="philosophy-copy reveal">
               <p>Work gets buried in coordination, handoffs, and invisible friction. The role of systems is to remove work that should not exist in the first place.</p>
-              <p>Systems aren't there to replace people. They remove the work that should not exist in the first place.</p>
+              <p>Systems aren't there to replace people. They clear unnecessary work so capable teams can move.</p>
               <p>When systems are right, people stop doing pointless work and focus on what actually matters.</p>
             </div>
           </div>
@@ -344,7 +350,7 @@
             <a class="social-link" href="#" aria-label="Parea Collective on LinkedIn">in</a>
           </div>
           <div class="footer-column">
-            <h3>Operating House</h3>
+            <h3>Our System</h3>
             <a href="#hero">Overview</a>
             <a href="#operating-house">Our System</a>
             <a href="#outcomes">Resources</a>
@@ -379,7 +385,7 @@
             <a href="#contact">Privacy Policy</a>
             <a href="#contact">Terms of Service</a>
           </div>
-          <p class="copyright">© 2026 Parea Collective. All rights reserved.</p>
+          <p class="copyright">&copy; 2026 Parea Collective. All rights reserved.</p>
         </footer>
       </section>
     </main>
