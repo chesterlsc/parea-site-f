@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Contact Parea Collective and share what you are trying to solve. We will route your message toward the clearest next step."
+    >
+    <title>Contact | Parea Collective</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%23050d0b'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='21' font-weight='700' fill='%23dfaf5c'%3EP%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="preload" href="assets/dark-canopy.png" as="image">
+    <link rel="stylesheet" href="styles.css?v=mobile-spacing-hero-border-pass">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="script.js?v=hero-photo" defer></script>
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html#hero" aria-label="Parea Collective home">Parea Collective</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <i data-lucide="menu" aria-hidden="true"></i>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="index.html#operating-house">Our System</a>
+        <a href="index.html#ecosystem">Ecosystem</a>
+        <a href="index.html#build-method">Build Method</a>
+        <a href="index.html#acquisitions">Acquisitions</a>
+        <a href="index.html#philosophy">Philosophy</a>
+        <a href="#contact-form">Contact</a>
+      </nav>
+      <a class="header-cta" href="#contact-form">
+        <span>Map Your System</span>
+        <small>Built through Aegis &amp; Co.</small>
+        <i data-lucide="arrow-right" aria-hidden="true"></i>
+      </a>
+    </header>
+
+    <main>
+      <section class="contact-form-section dark-section" id="contact-form" aria-labelledby="contact-title">
+        <div class="contact-shell reveal">
+          <aside class="contact-editorial" aria-label="Parea contact overview">
+            <p class="eyebrow">Contact Parea</p>
+            <h1 id="contact-title">Start in the<br>Right Place.</h1>
+            <div class="contact-rule" aria-hidden="true"></div>
+            <p class="contact-lede">
+              This is a general contact form.<br>
+              If you're not sure where to go,<br>
+              you're in the right place.
+            </p>
+
+            <div class="contact-note-card">
+              <p class="contact-note-kicker">Quick note</p>
+              <p>Tell us what you are trying to solve. We will route it toward the clearest next step inside the Parea ecosystem.</p>
+            </div>
+
+            <div class="contact-trust-note">
+              <i data-lucide="lock-keyhole" aria-hidden="true"></i>
+              <p>Every message is reviewed carefully. No lists, no blasts, no pressure.</p>
+            </div>
+          </aside>
+
+          <section class="contact-panel" aria-labelledby="contact-form-title">
+            <h2 class="sr-only" id="contact-form-title">Parea Collective contact form</h2>
+            <form
+              class="contact-form"
+              id="parea-contact-form"
+              action="mailto:hello@pareacollective.com"
+              method="POST"
+              novalidate
+            >
+              <input type="hidden" name="brand" value="Parea Collective">
+              <input type="hidden" name="form_type" value="General Contact">
+              <input type="hidden" name="source_page" value="Parea Collective Contact Page">
+
+              <div class="contact-wizard" data-current-step="1" data-total-steps="8">
+                <div class="contact-wizard-top" aria-label="Contact form progress">
+                  <div>
+                    <p class="contact-section-label">General contact</p>
+                    <p class="contact-progress-step">
+                      <span data-progress-current>01</span> / <span data-progress-total>08</span>
+                    </p>
+                  </div>
+                  <div class="contact-progress-track" aria-hidden="true">
+                    <span data-progress-bar></span>
+                  </div>
+                </div>
+
+                <div class="contact-step-list">
+                  <section class="contact-step is-active" data-step="1">
+                    <p class="contact-step-kicker">First, who should we address?</p>
+                    <div class="contact-field">
+                      <label class="contact-question-label" for="contact-name">Name <span>*</span></label>
+                      <input id="contact-name" type="text" name="name" placeholder="Your full name" autocomplete="name" required>
+                    </div>
+                    <p class="contact-step-error" aria-live="polite"></p>
+                  </section>
+
+                  <section class="contact-step" data-step="2" hidden>
+                    <p class="contact-step-kicker">Where can we reach you?</p>
+                    <div class="contact-field">
+                      <label class="contact-question-label" for="contact-email">Email <span>*</span></label>
+                      <input id="contact-email" type="email" name="email" placeholder="you@company.com" autocomplete="email" required>
+                    </div>
+                    <p class="contact-step-error" aria-live="polite"></p>
+                  </section>
+
+                  <section class="contact-step" data-step="3" hidden>
+                    <p class="contact-step-kicker">If there is a business attached, name it here.</p>
+                    <div class="contact-field">
+                      <label class="contact-question-label" for="contact-business">Business Name</label>
+                      <input id="contact-business" type="text" name="business_name" placeholder="Business or organization" autocomplete="organization">
+                    </div>
+                    <p class="contact-step-error" aria-live="polite"></p>
+                  </section>
+
+                  <section class="contact-step" data-step="4" hidden>
+                    <p class="contact-step-kicker">Give us the simple version.</p>
+                    <div class="contact-field">
+                      <label class="contact-question-label" for="contact-reason">What made you reach out? <span>*</span></label>
+                      <textarea id="contact-reason" name="reach_out_reason" placeholder="Keep it simple. What's on your mind?" required></textarea>
+                    </div>
+                    <p class="contact-step-error" aria-live="polite"></p>
+                  </section>
+
+                  <fieldset class="contact-step contact-step-fieldset" data-step="5" hidden>
+                    <legend class="contact-question-label">What are you looking for right now? <span>*</span></legend>
+                    <p class="contact-step-kicker">Choose the closest fit.</p>
+                    <div class="contact-choice-grid">
+                      <label class="contact-choice-card">
+                        <input type="radio" name="looking_for" value="Systems" required>
+                        <span>Systems</span>
+                      </label>
+                      <label class="contact-choice-card">
+                        <input type="radio" name="looking_for" value="Acquisitions" required>
+                        <span>Acquisitions</span>
+                      </label>
+                      <label class="contact-choice-card">
+                        <input type="radio" name="looking_for" value="Education" required>
+                        <span>Education</span>
+                      </label>
+                      <label class="contact-choice-card">
+                        <input type="radio" name="looking_for" value="General direction" required>
+                        <span>General direction</span>
+                      </label>
+                      <label class="contact-choice-card contact-choice-wide">
+                        <input type="radio" name="looking_for" value="Not sure yet" required>
+                        <span>Not sure yet</span>
+                      </label>
+                    </div>
+                    <p class="contact-step-error" aria-live="polite"></p>
+                  </fieldset>
+
+                  <section class="contact-step" data-step="6" hidden>
+                    <p class="contact-step-kicker">No need to force certainty.</p>
+                    <div class="contact-field">
+                      <label class="contact-question-label" for="contact-stuck">If you had to describe it simply, where are you stuck or unsure?</label>
+                      <textarea id="contact-stuck" name="stuck_or_unsure" placeholder="No need to overthink this"></textarea>
+                    </div>
+                    <p class="contact-step-error" aria-live="polite"></p>
+                  </section>
+
+                  <section class="contact-step" data-step="7" hidden>
+                    <p class="contact-step-kicker">What would make this useful?</p>
+                    <div class="contact-field">
+                      <label class="contact-question-label" for="contact-next">What would you like to see happen next? <span>*</span></label>
+                      <textarea id="contact-next" name="desired_next_step" placeholder="Clarity, direction, better systems, growth, or whatever it is for you" required></textarea>
+                    </div>
+                    <p class="contact-step-error" aria-live="polite"></p>
+                  </section>
+
+                  <fieldset class="contact-step contact-step-fieldset" data-step="8" hidden>
+                    <legend class="contact-question-label">Are you actively looking to make a change right now? <span>*</span></legend>
+                    <p class="contact-step-kicker">This helps us understand timing.</p>
+                    <div class="contact-choice-list">
+                      <label class="contact-choice-card">
+                        <input type="radio" name="change_timing" value="Yes, I'm ready to move on something" required>
+                        <span>Yes, I'm ready to move on something</span>
+                      </label>
+                      <label class="contact-choice-card">
+                        <input type="radio" name="change_timing" value="Possibly, depends on the right fit" required>
+                        <span>Possibly, depends on the right fit</span>
+                      </label>
+                      <label class="contact-choice-card">
+                        <input type="radio" name="change_timing" value="Not yet, just exploring" required>
+                        <span>Not yet, just exploring</span>
+                      </label>
+                    </div>
+                    <p class="contact-step-error" aria-live="polite"></p>
+                  </fieldset>
+                </div>
+
+                <p class="contact-bottom-note">
+                  If this needs a deeper business breakdown, we'll point you toward the right next step.
+                </p>
+
+                <div class="contact-actions">
+                  <button class="contact-back" type="button" data-back hidden>Back</button>
+                  <button class="contact-next" type="button" data-next>Next</button>
+                  <button class="contact-submit" type="submit" data-submit hidden>Let's do this <i data-lucide="arrow-right" aria-hidden="true"></i></button>
+                </div>
+
+                <p class="contact-form-status" aria-live="polite" data-form-status></p>
+              </div>
+            </form>
+          </section>
+        </div>
+
+        <footer class="site-footer">
+          <div class="footer-brand">
+            <a class="brand" href="index.html#hero">Parea Collective</a>
+            <p>The operating layer behind modern business.</p>
+            <a class="social-link" href="#" aria-label="Parea Collective on LinkedIn">in</a>
+          </div>
+          <div class="footer-column">
+            <h3>Our System</h3>
+            <a href="index.html#hero">Overview</a>
+            <a href="index.html#operating-house">Our System</a>
+            <a href="index.html#outcomes">Resources</a>
+          </div>
+          <div class="footer-column">
+            <h3>Ecosystem</h3>
+            <a href="index.html#ecosystem">Aegis &amp; Co.</a>
+            <a href="index.html#ecosystem">NAMI Studio</a>
+            <a href="index.html#ecosystem">PCAA</a>
+            <a href="index.html#acquisitions">Acquisitions</a>
+          </div>
+          <div class="footer-column">
+            <h3>Build Method</h3>
+            <a href="index.html#build-method">How We Build</a>
+            <a href="index.html#philosophy">Playbooks</a>
+            <a href="index.html#outcomes">Case Studies</a>
+          </div>
+          <div class="footer-column">
+            <h3>Acquisitions</h3>
+            <a href="index.html#acquisitions">Criteria</a>
+            <a href="index.html#acquisitions">Process</a>
+            <a href="index.html#outcomes">Success Stories</a>
+          </div>
+          <div class="footer-column">
+            <h3>Company</h3>
+            <a href="index.html#philosophy">About</a>
+            <a href="index.html#ecosystem">Careers</a>
+            <a href="#contact-form">Contact</a>
+          </div>
+          <div class="footer-column">
+            <h3>Legal</h3>
+            <a href="#contact-form">Privacy Policy</a>
+            <a href="#contact-form">Terms of Service</a>
+          </div>
+          <p class="copyright">&copy; 2026 Parea Collective. All rights reserved.</p>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
